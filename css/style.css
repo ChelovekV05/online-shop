@@ -301,6 +301,10 @@ body {
 .featured-button-BrowseAll {
     width: 214px;
     height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin-top: 18px;
     border: 1px solid #F26376;
     font-style: normal;
@@ -308,7 +312,39 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    background-color: #FFFFFF;
+}
+
+.catalog-pagination-tr {
+    border: 1px solid #C4C4C4;
+    width: 284px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-pagination-td {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin: 9px;
+}
+
+.pagination-ellipsis {
+    margin: -11px;
+    pointer-events:none
+}
+
+.pagination-td-active {
+    color: #EF5B70;
+    pointer-events:none
+}
+
+.catalog-pagination-td:hover {
+    color: #EF5B70;
+    cursor: pointer;
 }
 
 .information-stand {
