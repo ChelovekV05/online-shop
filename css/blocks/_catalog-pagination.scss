@@ -1,0 +1,28 @@
+.catalog-pagination-tr {
+    border: 1px solid #C4C4C4;
+    width: 284px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-pagination-td {
+    @include font(16px, 300, 19px, );
+    color: #C4C4C4;
+    margin: 9px;
+    &:hover {
+        color: #EF5B70;
+        cursor: pointer;
+    }
+}
+
+.catalog-pagination-ellipsis {
+    margin: -11px;
+    pointer-events:none
+}
+
+.pagination-td-active {
+    color: #EF5B70;
+    pointer-events:none
+}

@@ -16,6 +16,10 @@ body {
   visibility: hidden;
 }
 
+.center {
+  padding: 0 calc(50% - 1140px / 2);
+}
+
 .header {
   height: 75px;
   background-color: #222222;
@@ -29,10 +33,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.center {
-  padding: 0 calc(50% - 1140px / 2);
 }
 
 .case1 img {
@@ -65,7 +65,7 @@ body {
   margin: 0;
 }
 
-.line {
+.promo-text-line {
   width: 12px;
   height: 93px;
   background-color: #F16D7F;
@@ -74,29 +74,33 @@ body {
 }
 
 .pt-span-1 {
-  font-style: normal;
-  font-weight: 900;
   font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  font-style: normal;
   color: #222222;
 }
 
 .pt-span-2 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: normal;
   color: #222222;
 }
 
 .pt-span-3 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: normal;
   color: #F16D7F;
 }
 
 .catalog-breadcrumb {
   height: 150px;
   background-color: #F8F3F4;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,14 +110,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
 }
 
 .catalog-h1 {
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
+  font-weight: normal;
   line-height: 29px;
+  font-style: normal;
   color: #F16D7F;
 }
 
@@ -131,10 +134,10 @@ body {
 
 .catalog-breadcrumb-link {
   text-decoration: none;
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   line-height: 17px;
+  font-style: normal;
   color: #636363;
   margin: 4px;
 }
@@ -169,10 +172,10 @@ body {
 
 .catalog-filter > p {
   margin: 0 11px 0 0;
-  font-style: normal;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   line-height: 17px;
+  font-style: normal;
   color: #000000;
 }
 
@@ -186,10 +189,10 @@ body {
 }
 
 .catalog-sort-p {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
+  font-weight: normal;
   line-height: 17px;
+  font-style: normal;
   color: #6F6E6E;
   margin: 0 28px 0 0;
 }
@@ -249,18 +252,20 @@ body {
 }
 
 .categories-p1 {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
   text-align: center;
   color: #FFFFFF;
   margin: 3px;
 }
 
 .categories-p2 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: normal;
   text-align: center;
   color: #F16D7F;
   margin: 3px;
@@ -293,19 +298,19 @@ body {
 }
 
 .featured-title-h2 {
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
+  font-weight: normal;
   line-height: 36px;
+  font-style: normal;
   color: #222222;
   margin: 96px 0 6px 0;
 }
 
 .featured-title-p {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
+  font-weight: normal;
   line-height: 17px;
+  font-style: normal;
   color: #9F9F9F;
   margin-top: 6px;
 }
@@ -342,28 +347,28 @@ body {
 }
 
 .item-description-h3 {
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 16px;
+  font-style: normal;
   color: #000000;
   margin: 25px 0 12px 18px;
 }
 
 .item-description-text {
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   line-height: 17px;
+  font-style: normal;
   color: #5D5D5D;
   margin: 0 25px 12px 18px;
 }
 
 .item-description-price {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
   line-height: 19px;
+  font-style: normal;
   color: #F16D7F;
   margin-left: 18px;
 }
@@ -383,10 +388,10 @@ body {
   text-decoration: none;
   margin-top: 18px;
   border: 1px solid #F26376;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
   line-height: 19px;
+  font-style: normal;
   color: #F26376;
 }
 
@@ -406,15 +411,20 @@ body {
 }
 
 .catalog-pagination-td {
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
   line-height: 19px;
+  font-style: normal;
   color: #C4C4C4;
   margin: 9px;
 }
 
-.pagination-ellipsis {
+.catalog-pagination-td:hover {
+  color: #EF5B70;
+  cursor: pointer;
+}
+
+.catalog-pagination-ellipsis {
   margin: -11px;
   pointer-events: none;
 }
@@ -422,11 +432,6 @@ body {
 .pagination-td-active {
   color: #EF5B70;
   pointer-events: none;
-}
-
-.catalog-pagination-td:hover {
-  color: #EF5B70;
-  cursor: pointer;
 }
 
 .information-stand {
@@ -456,19 +461,19 @@ body {
 }
 
 .inform-box-h3 {
-  font-style: normal;
-  font-weight: normal;
   font-size: 19.96px;
+  font-weight: normal;
   line-height: 24px;
+  font-style: normal;
   color: #FBFBFB;
   margin: 28px 0 16px;
 }
 
 .inform-box-text {
-  font-style: normal;
-  font-weight: 300;
   font-size: 13.972px;
+  font-weight: 300;
   line-height: 17px;
+  font-style: normal;
   text-align: center;
   color: #FBFBFB;
   margin: 0;
@@ -512,10 +517,10 @@ body {
 }
 
 .subscribe-info-p {
-  font-style: italic;
-  font-weight: normal;
   font-size: 20px;
+  font-weight: normal;
   line-height: 24px;
+  font-style: italic;
   text-align: center;
   color: #222224;
   width: 360px;
@@ -523,9 +528,10 @@ body {
 }
 
 .subscribe-p {
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: normal;
   text-align: center;
   color: #222224;
   margin: 32px;
@@ -534,6 +540,8 @@ body {
 .subscribe-p span {
   font-size: 18px;
   font-weight: 400;
+  line-height: normal;
+  font-style: normal;
 }
 
 .subscribe-box {
@@ -563,10 +571,10 @@ body {
   background-color: #F16D7F;
   border: none;
   border-radius: 0 23px 23px 0;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
+  font-weight: normal;
   line-height: 17px;
+  font-style: normal;
   text-align: center;
   color: #FFFFFF;
   outline: none;
@@ -587,10 +595,10 @@ body {
 }
 
 .copyright {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
   line-height: 19px;
+  font-style: normal;
   color: #FBFBFB;
 }
 

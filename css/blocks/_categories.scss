@@ -1,0 +1,51 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.categories div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.for-women {
+    width: $card-widht;
+    height: 260px;
+    background-image: url(../img/for-women.jpg);
+}
+
+.for-men {
+    width: $card-widht;
+    height: 260px;
+    background-image: url(../img/for-men.jpg);
+}
+
+.for-kids {
+    width: $card-widht;
+    height: 260px;
+    background-image: url(../img/for-kids.jpg);
+}
+
+.accesorise {
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    background-image: url(../img/ACCESORIES.jpg);
+}
+
+.categories-p1 {
+    @include font(16px, 400);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 3px;
+}
+
+.categories-p2 {
+    @include font(24px, 700);
+    text-align: center;
+    color: #F16D7F;
+    margin: 3px;
+}
