@@ -1,0 +1,23 @@
+.product-slider {
+    height: 777px;
+    background-color: #F7F7F7;
+    margin-top: -50px;
+    @include flex;
+}
+
+.catalog-slider-btn-b {
+    height: 100%;
+    @include flex;
+    &:hover svg {
+        fill: $pink;
+    }
+}
+
+.catalog-slider-btn-m {
+    background-color: #2a2a2a15;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

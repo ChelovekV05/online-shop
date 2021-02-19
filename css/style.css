@@ -201,6 +201,209 @@ body {
   margin-left: 10px;
 }
 
+.product-slider {
+  height: 777px;
+  background-color: #F7F7F7;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog-slider-btn-b {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog-slider-btn-b:hover svg {
+  fill: #F16D7F;
+}
+
+.catalog-slider-btn-m {
+  background-color: #2a2a2a15;
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-description {
+  height: 600px;
+  width: 1140px;
+  border: 1px solid #EAEAEA;
+  margin: 0 auto;
+  position: relative;
+  top: -65px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-description-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-description-heading-h3 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 0;
+}
+
+.product-description-heading-hr {
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  margin: 12px 0;
+}
+
+.product-description-heading-h4 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #4D4D4D;
+  margin: 0;
+}
+
+.product-description-hr {
+  width: 642px;
+}
+
+.product-description-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-description-text-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  font-style: normal;
+  color: #5E5E5E;
+  text-align: center;
+  width: 600px;
+}
+
+.product-description-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #EF5B70;
+}
+
+.product-description-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-description-sort-details {
+  position: relative;
+}
+
+.product-description-sort-details p {
+  margin-left: 10px;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+.product-description-sort-summary {
+  list-style: none;
+  margin-right: 23px;
+}
+
+.product-description-sort-summary img {
+  margin-left: 9px;
+}
+
+.product-description-sort-options-1,
+.product-description-sort-options-2,
+.product-description-sort-options-3 {
+  position: absolute;
+  background-color: white;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.product-description-sort-options-1 {
+  width: 162px;
+}
+
+.product-description-sort-options-2 {
+  width: 142px;
+}
+
+.product-description-sort-options-3 {
+  width: 122px;
+}
+
+.product-description-btn {
+  width: 212px;
+  height: 48px;
+  border: 1px solid #FF6A6A;
+}
+
 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
