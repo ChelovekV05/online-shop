@@ -290,7 +290,7 @@ body {
   line-height: normal;
   font-style: normal;
   color: #F16D7F;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .product-description-heading-hr {
@@ -311,6 +311,8 @@ body {
 
 .product-description-hr {
   width: 642px;
+  color: #EAEAEA;
+  margin: 0;
 }
 
 .product-description-text {
@@ -333,7 +335,8 @@ body {
   font-style: normal;
   color: #5E5E5E;
   text-align: center;
-  width: 600px;
+  width: 550px;
+  margin-top: 0;
 }
 
 .product-description-text {
@@ -342,6 +345,19 @@ body {
   line-height: normal;
   font-style: normal;
   color: #EF5B70;
+}
+
+.product-description-form--add-to-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-description-sort {
@@ -354,14 +370,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 75px;
 }
 
 .product-description-sort-details {
   position: relative;
-}
-
-.product-description-sort-details p {
-  margin-left: 10px;
 }
 
 ::-webkit-details-marker {
@@ -371,6 +384,8 @@ body {
 .product-description-sort-summary {
   list-style: none;
   margin-right: 23px;
+  outline: none;
+  cursor: pointer;
 }
 
 .product-description-sort-summary img {
@@ -384,6 +399,27 @@ body {
   background-color: white;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  top: 25px;
+  z-index: 1;
+}
+
+.product-description-sort-options-1 div,
+.product-description-sort-options-2 div,
+.product-description-sort-options-3 div {
+  margin: 15px;
+}
+
+.product-description-sort-options-1 div label,
+.product-description-sort-options-2 div label,
+.product-description-sort-options-3 div label {
+  cursor: pointer;
+}
+
+.product-description-sort-options-1 div input,
+.product-description-sort-options-2 div input,
+.product-description-sort-options-3 div input {
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .product-description-sort-options-1 {
@@ -398,10 +434,44 @@ body {
   width: 122px;
 }
 
+.product-description-sort-quantity {
+  width: 92px;
+}
+
 .product-description-btn {
   width: 212px;
   height: 48px;
   border: 1px solid #FF6A6A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: transparent;
+  outline: none;
+}
+
+.product-description-btn:hover {
+  cursor: pointer;
+  color: #F16D7F;
+}
+
+.product-description-btn:active {
+  border: 2px solid #FF6A6A;
+}
+
+.product-description-btn:active img {
+  left: 19px;
+}
+
+.product-description-btn img {
+  position: absolute;
+  left: 20px;
 }
 
 .categories {

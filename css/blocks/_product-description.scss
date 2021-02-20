@@ -22,7 +22,7 @@
 .product-description-heading-h3 {
     @include font(14px, 300);
     color: $pink;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .product-description-heading-hr {
@@ -40,6 +40,8 @@
 
 .product-description-hr {
     width: 642px;
+    color: #EAEAEA;
+    margin: 0;
 }
 
 .product-description-text {
@@ -52,7 +54,8 @@
     @include font(14px, 300, 17px);
     color: #5E5E5E;
     text-align: center;
-    width: 600px;  
+    width: 550px;  
+    margin-top: 0;
 }
 
 .product-description-text {
@@ -60,15 +63,19 @@
     color: #EF5B70;
 }
 
+.product-description-form--add-to-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .product-description-sort {
     @include flex;
+    margin-bottom: 75px;
 }
 
 .product-description-sort-details {
     position: relative;
-    & p {
-        margin-left: 10px ;
-    }
 }
 
 ::-webkit-details-marker {
@@ -78,6 +85,8 @@
 .product-description-sort-summary {
     list-style: none;
     margin-right: 23px;
+    outline: none;
+    cursor: pointer;
     & img {
         margin-left: 9px;
     }
@@ -89,6 +98,19 @@
     position: absolute;
     background-color: white;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    top: 25px;
+    z-index: 1;
+    & div {
+        margin: 15px;
+        & label {
+            cursor: pointer;
+        }
+        & input {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+
 }
 
 .product-description-sort-options-1 {
@@ -103,8 +125,32 @@
     width: 122px;
 }
 
+.product-description-sort-quantity {
+    width: 92px;
+}
+
 .product-description-btn {
     width: 212px;
     height: 48px;
     border: 1px solid #FF6A6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        color: $pink;
+    }
+    &:active {
+        border: 2px solid #FF6A6A;
+        & img {
+            left: 19px;
+        }
+    }
+    & img {
+        position: absolute;
+        left: 20px;
+    }
 }
