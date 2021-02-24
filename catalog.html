@@ -46,21 +46,89 @@
         </div>
         <header class="catalog-navigation center">
             <div class="catalog-filter">
-                <p>FILTER</p>
-                <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
-                    </svg>
+                <details class="catalog-filter__details">
+                    <summary class="catalog-filter__summary">FILTER
+                        <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                            </svg>
+                    </summary>
+                    <div class="catalog-filter-open">
+                        <details class="catalog-filter-open__details">
+                            <summary class="catalog-filter-open__summary">CATEGORY</summary>
+                            <ul class="catalog-filter-open__list">
+                                <li class="catalog-filter-open__list-element">Accessories</li>
+                                <li class="catalog-filter-open__list-element">Bags</li>
+                                <li class="catalog-filter-open__list-element">Denim</li>
+                                <li class="catalog-filter-open__list-element">Hoodies & Sweatshirts</li>
+                                <li class="catalog-filter-open__list-element">Jackets & Coats</li>
+                                <li class="catalog-filter-open__list-element">Polos</li>
+                                <li class="catalog-filter-open__list-element">Shirts</li>
+                                <li class="catalog-filter-open__list-element">Shoes</li>
+                                <li class="catalog-filter-open__list-element">Sweaters & Knits</li>
+                                <li class="catalog-filter-open__list-element">T-Shirts</li>
+                            </ul>
+                        </details>
+                        <details class="catalog-filter-open__details">
+                            <summary class="catalog-filter-open__summary">BRAND</summary>
+                        </details>
+                        <details class="catalog-filter-open__details">
+                            <summary class="catalog-filter-open__summary">DESIGNER</summary>
+                        </details>
+                    </div>    
+                </details>
             </div>
             <div class="catalog-sort">
-                <p class="catalog-sort-p">TRENDING NOW
-                    <img src="img/sort-arrow.svg" alt="arrow" class="catalog-sort-img">
-                </p>
-                <p class="catalog-sort-p">SIZE
-                    <img src="img/sort-arrow.svg" alt="arrow" class="catalog-sort-img">
-                </p>
-                <p class="catalog-sort-p">PRICE
-                    <img src="img/sort-arrow.svg" alt="arrow" class="catalog-sort-img">
-                </p>
+                <details class="catalog-sort-details">
+                    <summary class="catalog-sort-summary">TRENDING NOW <img src="img/sort-arrow.svg" alt="arrow"></summary>
+                    <div class="catalog-sort-options-1">
+                        <div>
+                            <label><input type="radio" name="radio-trending">1</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-trending">2</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-trending">3</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-trending">4</label>
+                        </div>
+                    </div>
+                </details>
+                <details class="catalog-sort-details">
+                    <summary class="catalog-sort-summary">SIZE <img src="img/sort-arrow.svg" alt="arrow"></summary>
+                    <div class="catalog-sort-options-2">
+                        <div>
+                            <label><input type="radio" name="radio-sise">1</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-sise">2</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-sise">3</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-sise">4</label>
+                        </div>
+                    </div>
+                </details>
+                <details class="catalog-sort-details">
+                    <summary class="catalog-sort-summary">PRICE <img src="img/sort-arrow.svg" alt="arrow"></summary>
+                    <div class="catalog-sort-options-3">
+                        <div>
+                            <label><input type="radio" name="radio-price">1</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-price">2</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-price">3</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio-price">4</label>
+                        </div>
+                    </div>
+                </details>
             </div>
             <div></div>
         </header>
