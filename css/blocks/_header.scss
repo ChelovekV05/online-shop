@@ -1,7 +1,6 @@
 .header {
     height: 75px;
     background-color: $black;
-    padding: 0px 500px;
     @include flex();
 }
 
