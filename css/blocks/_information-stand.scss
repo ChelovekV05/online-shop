@@ -11,6 +11,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.1)
+    }
 }
 
 .inform-box-h3 {

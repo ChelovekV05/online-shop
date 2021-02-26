@@ -10,13 +10,14 @@
 
 .catalog-filter {
     position: relative;
+    z-index: 1;
 }
 
 .catalog-filter__details {
     display: flex;
     align-items: center;
     width: $card-widht;  
-    position: absolute;  
+    position: absolute;
 }
 
 .catalog-filter__details[open] > summary {
@@ -38,8 +39,9 @@
     @include font(14px, 600, 17px, );
     color: #000000;
     outline: none;
+    transition: color 0.3s, fill 0.3s;
     & svg {
-        margin: 0 0 0 11px;
+        margin: 0 0 0 11px; 
     }
     &:hover {
         cursor: pointer;
@@ -51,6 +53,7 @@
 .catalog-filter-open {
     padding-left: 15px;
 }
+
 
 .catalog-filter-open__details[open] > .catalog-filter-open__summary {
     color: #EF5B70;
@@ -67,6 +70,12 @@
     margin-bottom: 24px;
     @include font(14px);
     border-bottom: 1px solid #EBEBEB;
+    transition: 0.3s;
+    &:hover {
+        cursor: pointer;
+        fill: #EF5B70;
+        color: #EF5B70;
+    }
 }
 
 .catalog-filter-open__list {
@@ -83,13 +92,19 @@
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .catalog-sort-summary {
-    @include font(14px, normal, 17px, );
+    @include font(14px, normal, 17px,);
     color: #6F6E6E;
     margin: 0 28px 0 0;
     outline: none;
+    transition: 0.3s;
+    &:hover {
+        cursor: pointer;
+        color: #222121;
+    }
 }
 
 .catalog-sort-summary > img {
@@ -105,6 +120,9 @@
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     & div {
         margin: 6px;
+    }
+    & input {
+        margin-right: 9px;
     }
 }
 

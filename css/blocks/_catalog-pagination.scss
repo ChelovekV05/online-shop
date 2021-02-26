@@ -11,6 +11,7 @@
     @include font(16px, 300, 19px, );
     color: #C4C4C4;
     margin: 9px;
+    transition: 0.3s;
     &:hover {
         color: #EF5B70;
         cursor: pointer;

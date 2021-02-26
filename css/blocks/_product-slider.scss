@@ -8,6 +8,9 @@
 .catalog-slider-btn-b {
     height: 100%;
     @include flex;
+    & svg {
+        transition: 0.3s;
+    }
     &:hover svg {
         fill: $pink;
     }

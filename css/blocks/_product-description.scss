@@ -133,23 +133,25 @@
     width: 212px;
     height: 48px;
     border: 1px solid #FF6A6A;
+    color: $pink;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background-color: transparent;
     outline: none;
+    fill: #EF5B70;
+    transition: 0.4s;
     &:hover {
         cursor: pointer;
-        color: $pink;
+        background-color: $pink;
+        color: #FFFFFF;
+        fill: #FFFFFF;
     }
     &:active {
-        border: 2px solid #FF6A6A;
-        & img {
-            left: 19px;
-        }
+        transform: scale(0.97);
     }
-    & img {
+    & svg {
         position: absolute;
         left: 20px;
     }
