@@ -75,6 +75,7 @@
         cursor: pointer;
         fill: #EF5B70;
         color: #EF5B70;
+        transform: scale(1.03);
     }
 }
 
@@ -123,6 +124,9 @@
     }
     & input {
         margin-right: 9px;
+    }
+    & label:hover {
+        cursor: pointer;
     }
 }
 
