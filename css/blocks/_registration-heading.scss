@@ -1,0 +1,11 @@
+.registration-heading {
+    height: 150px;
+    background-color: #F8F3F4;
+    display: flex;
+    align-items: center;
+}
+
+.registration-heading-h1 {
+    color: #F16D7F;
+    @include font (24px, normal, 29px);
+}

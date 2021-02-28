@@ -358,6 +358,25 @@ body {
   font-style: normal;
 }
 
+.registration-heading {
+  height: 150px;
+  background-color: #F8F3F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-heading-h1 {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 29px;
+  font-style: normal;
+}
+
 .product-slider {
   height: 777px;
   background-color: #F7F7F7;
@@ -1313,6 +1332,200 @@ body {
 .order-confirmation-btn:hover {
   cursor: pointer;
   background-color: #df5366;
+}
+
+.registration-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 64px;
+}
+
+.registration-form {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-form-h3 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  margin: 0;
+}
+
+.registration-form-input {
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 45px;
+  margin-top: 20px;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.registration-form-input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #B1B1B1;
+}
+
+.registration-form-input:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #B1B1B1;
+}
+
+.registration-form-input::-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #B1B1B1;
+}
+
+.registration-form-input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  color: #B1B1B1;
+}
+
+.registration-form-input:focus {
+  background-color: #f9f9f9;
+}
+
+.registration-form-input:focus::-webkit-input-placeholder {
+  color: #858181;
+}
+
+.registration-form-input:focus:-ms-input-placeholder {
+  color: #858181;
+}
+
+.registration-form-input:focus::-ms-input-placeholder {
+  color: #858181;
+}
+
+.registration-form-input:focus::placeholder {
+  color: #858181;
+}
+
+.registration-form-input:hover::-webkit-input-placeholder {
+  color: #908c8c;
+}
+
+.registration-form-input:hover:-ms-input-placeholder {
+  color: #908c8c;
+}
+
+.registration-form-input:hover::-ms-input-placeholder {
+  color: #908c8c;
+}
+
+.registration-form-input:hover::placeholder {
+  color: #908c8c;
+}
+
+.registration-form-gender {
+  margin: 32px 0;
+}
+
+.registration-form-gender input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.registration-form-gender label {
+  color: #000;
+  margin-right: 20px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.registration-form-text {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  font-style: normal;
+  color: #B1B1B1;
+  margin: 15px 0 39px 0;
+}
+
+.registration-form-btn {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  width: 167px;
+  height: 50px;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.registration-form-btn:hover {
+  background-color: #e65c6f;
+}
+
+.registration-text {
+  width: 650px;
+}
+
+.registration-text-h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.registration-text-p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  font-style: normal;
+  margin-bottom: 21px;
+}
+
+.registration-text-ul {
+  list-style-image: url(../../img/tick.svg);
+}
+
+.registration-text-list {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  font-style: normal;
+  margin-bottom: 16px;
 }
 
 .catalog-pagination-tr {

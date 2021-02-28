@@ -23,64 +23,42 @@
             <a href="registration.html">
                 <img src="img/icon-account.svg" alt="account">
             </a>
-            <a href="cart.html">
+            <a href="#">
                 <img src="img/icon-basket.svg" alt="basket">
             </a>
         </div>
     </header>
-    <main>
-        <header class="cart-heading center">
-            <h1 class="cart-heading-h1">SHOPPING CART</h1>
-        </header>
-        <div class="cart-main center">
-            <section class="cart-all-products"> 
-                <form class="cart-product">
-                    <img src="img/item-3.jpg" alt="item-3" class="cart-product-img">
-                    <div class="cart-product-desc">
-                        <h3 class="cart-product-h3">MANGO PEOPLE T-SHIRT</h3>
-                        <div class="cart-product-datails">
-                            <p class="cart-product-datails-price">Price: <span>$300</span></p>
-                            <p class="cart-product-datails-color">Color: Red</p>
-                            <p class="cart-product-datails-size">Size: Xl</p>
-                            <p class="cart-product-datails-quantity">Quantity:<input type="number"></p>
-                        </div>
-                    </div>
-                    <button class="cart-product-btn"><img src="img/cross.svg" alt="cross"></button>
-                </form>
-                <form class="cart-product">
-                    <img src="img/item-9.jpg" alt="item-9" class="cart-product-img">
-                    <div class="cart-product-desc">
-                        <h3 class="cart-product-h3">MANGO PEOPLE T-SHIRT</h3>
-                        <div class="cart-product-datails">
-                            <p class="cart-product-datails-price">Price: <span>$300</span></p>
-                            <p class="cart-product-datails-color">Color: Red</p>
-                            <p class="cart-product-datails-size">Size: Xl</p>
-                            <p class="cart-product-datails-quantity">Quantity:<input type="number"></p>
-                        </div>
-                    </div>
-                    <button class="cart-product-btn"><img src="img/cross.svg" alt="cross"></button>
-                </form>
-                <form class="cart-all-products-buttons">
-                    <button class="cart-all-products-btn">CLEAR SHOPPING CART</button>
-                    <button class="cart-all-products-btn">CONTINUE SHOPPING</button>
-                </form>
-            </section>
-            <section class="catr-shipping">
-                <form class="cart-shipping-adress">
-                     <p class="cart-shipping-adress-p">SHIPPING ADRESS</p>
-                    <input class="cart-shipping-adress-input" type="text" placeholder="Country">
-                    <input class="cart-shipping-adress-input" type="text" placeholder="State">
-                    <input class="cart-shipping-adress-input" type="text" placeholder="Postcode / Zip">
-                    <button class="cart-shipping-adress-btn">GET A QUOTE</button>
-                </form>
-                <form class="cart-order-confirmation">
-                    <p class="order-confirmation-sub">SUB TOTAL $900</p>
-                    <p class="order-confirmation-grand">GRAND TOTAL <span>$900</span></p>
-                    <hr class="order-confirmation-hr">
-                    <button class="order-confirmation-btn">PROCEED TO CHECKOUT</button>
-                </form>
-            </section>
-        </div>
+    <header class="registration-heading center">
+        <h1 class="registration-heading-h1">REGISTRATION</h1>
+    </header>
+    <main class="registration-main center">
+        <h2 class="hidden">registration form</h2>
+        <form action="" class="registration-form">
+            <h3 class="registration-form-h3">Your Name</h3>
+            <input type="text" class="registration-form-input" placeholder="First Name">
+            <input type="text" class="registration-form-input" placeholder="Last Name">
+            <div class="registration-form-gender">
+                <label><input type="radio" name="radio-gender">Male</label>
+                <label><input type="radio" name="radio-gender">Female</label>
+            </div>
+            <h3 class="registration-form-h3">Login details</h3>
+            <input type="email" class="registration-form-input" placeholder="Email">
+            <input type="text" class="registration-form-input" placeholder="Passowrd">
+            <p class="registration-form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button class="registration-form-btn">JOIN NOW <img src="img/btn-arrow.svg" alt="arrow"></button>
+        </form>
+        <h2 class="hidden">perks</h2>
+        <section class="registration-text">
+            <h3 class="registration-text-h3">LOYALTY HAS ITS PERKS</h3>
+            <p class="registration-text-p">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="registration-text-ul">
+                <li class="registration-text-list">15% off welcome offer</li>
+                <li class="registration-text-list">Free shipping, returns and exchanges on all orders</li>
+                <li class="registration-text-list">$10 off a purchase on your birthday</li>
+                <li class="registration-text-list">Early access to products</li>
+                <li class="registration-text-list">Exclusive offers & rewards</li>
+            </ul>
+        </section>
     </main>
     <aside class="information-stand center">
         <h2 class="hidden">Advantages</h2>
