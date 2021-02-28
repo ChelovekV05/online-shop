@@ -58,10 +58,43 @@
     margin-top: 0;
 }
 
-.product-description-text {
+.product-description-text-price {
     @include font (24px, 300);
     color: #EF5B70;
+    &:hover {
+        animation: circle 15s linear infinite;
+    }
 }
+
+@keyframes circle {
+    from {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    12% {
+        transform: translateX(125px) translateY(40px) scale(1.25);
+    }
+    25% {
+        transform: translateX(200px) translateY(100px) scale(1.5);
+    }
+    37% {
+        transform: translateX(125px) translateY(160px) scale(1.75);
+    }
+    50% {
+        transform: translateX(0) translateY(200px) scale(2);
+    }
+    62% {
+        transform: translateX(-125px) translateY(160px) scale(1.75);
+    }
+    75% {
+        transform: translateX(-200px) translateY(100px) scale(1.5);
+    }
+    87% {
+        transform: translateX(-75px) translateY(40px) scale(1.25);
+    }
+    to {
+        transform: translateX(0) translateY(0) scale(1);
+        }
+    }
 
 .product-description-form--add-to-cart {
     display: flex;
