@@ -34,7 +34,7 @@
     height: 582px;
     display: flex;
     flex-direction: column;
-    background-color: #F8F8F8;;
+    background-color: #F8F8F8;
     margin-bottom: 30px;
     &:hover .featured-items-overlay {
         opacity: 0.86;
@@ -121,5 +121,19 @@
     }
     &:active {
         transform: scale(0.97);
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .featured-title-h2 {
+        margin-top:  155px;
+    }
+    
+    .featured-title-p { 
+        margin-bottom: 39px;
+    }
+
+    .featured-items {
+        margin-bottom: 18px;
     }
 }

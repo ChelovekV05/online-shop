@@ -17,15 +17,32 @@
     }
 }
 
+.inform-box-img-size {
+    width: 48px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inform-box-h3 {
-    @include font(19.96px, normal, 24px, );
+    @include font(20px, normal, 24px, );
     color: #FBFBFB;
     margin: 28px 0 16px;
 }
 
 .inform-box-text {
-    @include font(13.972px, 300, 17px, );
+    @include font(14px, 300, 17px, );
     text-align: center;
     color: #FBFBFB;
     margin: 0;
+}
+
+@media screen and (max-width: 1180px) {
+    .information-stand {
+        flex-direction: column;
+        height: 610px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
