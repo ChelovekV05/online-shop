@@ -1,0 +1,36 @@
+.promo {
+    background-color: #F1E4E6;
+    @include flex;
+}
+
+.promo-text {
+    width: 570px;
+    margin-left: 63px;
+}
+
+.promo-text-h1 {
+    margin: 0;
+}
+
+.promo-text-line {
+    width: 12px;
+    height: 93px;
+    background-color: $pink;
+    float: left;
+    margin-right: 16px;
+}
+
+.pt-span-1 {
+    @include font(48px, 900);
+    color: $black;
+}
+
+.pt-span-2 {
+    @include font(32px, 700);
+    color: $black;
+}
+
+.pt-span-3 {
+    @include font(32px, 700);
+    color: $pink;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.hidden {
+    position: absolute;
+    left: -999999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.center {
+    padding: 0 calc(50% - 1140px / 2);
+}
