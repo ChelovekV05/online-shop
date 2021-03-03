@@ -27,3 +27,10 @@
     color: #EF5B70;
     pointer-events:none
 }
+
+@media screen and (max-width: 1180px) {
+    .catalog-pagination {
+        margin-top: 22px;
+        margin-bottom: -32px;
+    }
+}

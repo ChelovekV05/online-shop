@@ -100,3 +100,31 @@
     @include font(24px, 300, 29px);
     margin-bottom: 16px;
 }
+
+@media screen and (max-width: 1180px) {
+    .registration-main {
+        margin-bottom: 96px;
+    }
+
+    .registration-text {
+        width: 354px;
+    }
+    
+    .registration-text-h3 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+    
+    .registration-text-p {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 22px;
+    }
+
+    .registration-text-list {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 23px;
+    }
+}

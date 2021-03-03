@@ -136,4 +136,12 @@
     .featured-items {
         margin-bottom: 18px;
     }
+
+    .catalog-products .featured-items:last-child {
+        display: none;
+    }
+
+    .product-main .featured-items:last-child {
+        display: none;
+    }
 }
