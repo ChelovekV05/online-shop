@@ -1375,7 +1375,7 @@ body {
   width: 260px;
 }
 
-.cart-product-datails {
+.cart-product-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1386,10 +1386,10 @@ body {
   margin-top: 42px;
 }
 
-.cart-product-datails-price,
-.cart-product-datails-color,
-.cart-product-datails-size,
-.cart-product-datails-quantity {
+.cart-product-details-price,
+.cart-product-details-color,
+.cart-product-details-size,
+.cart-product-details-quantity {
   color: #575757;
   font-size: 22px;
   font-weight: normal;
@@ -1398,14 +1398,14 @@ body {
   margin: 0 0 6px;
 }
 
-.cart-product-datails-price > span,
-.cart-product-datails-color > span,
-.cart-product-datails-size > span,
-.cart-product-datails-quantity > span {
+.cart-product-details-price > span,
+.cart-product-details-color > span,
+.cart-product-details-size > span,
+.cart-product-details-quantity > span {
   color: #EF5B70;
 }
 
-.cart-product-datails-quantity input {
+.cart-product-details-quantity input {
   margin-left: 24px;
   width: 44px;
 }
@@ -1669,6 +1669,51 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .cart-product {
+    width: 358px;
+    height: 188px;
+  }
+  .cart-product-img {
+    width: 144px;
+    height: 188px;
+  }
+  .cart-product-desc {
+    margin: 14px 0 0 17px;
+  }
+  .cart-product-h3 {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    font-style: normal;
+  }
+  .cart-product-details {
+    margin-top: 26px;
+  }
+  .cart-product-details-price,
+  .cart-product-details-color,
+  .cart-product-details-size,
+  .cart-product-details-quantity {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16.8px;
+    font-style: normal;
+  }
+  .cart-all-products-btn {
+    width: 175px;
+    height: 33px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14.4px;
+    font-style: normal;
+  }
+  .catr-shipping {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .registration-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1884,6 +1929,16 @@ body {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .registration-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .registration-form {
+    margin-bottom: 40px;
   }
 }
 

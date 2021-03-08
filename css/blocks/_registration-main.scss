@@ -128,3 +128,13 @@
         margin-bottom: 23px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .registration-main {
+        flex-wrap: wrap;
+    }
+
+    .registration-form {
+        margin-bottom: 40px;
+    }
+}
