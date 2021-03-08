@@ -68,3 +68,23 @@
         margin-top: 19px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories-for {
+        width: 343px;
+        height: 247px;
+        background-size: 100% 100%;
+        margin-bottom: 32px;
+    }
+
+    .accesorise {
+        width: 342.26px;
+        height: 111px;
+        margin: 0;
+    }
+}

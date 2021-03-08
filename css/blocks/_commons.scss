@@ -24,3 +24,10 @@ body {
     }
     $widht-screen: 768px;
 }
+
+@media screen and (max-width: 767px) {
+    .center {
+        padding: 0 calc(50% - (375px - 32px) / 2);
+    }
+    $widht-screen: 375px;
+}

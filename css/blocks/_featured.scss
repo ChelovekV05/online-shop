@@ -145,3 +145,21 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .featured-title-h2 {
+        margin-top:  64px;
+    }
+
+    .featured-title-p { 
+        margin-bottom: 30px;
+    }
+
+    .featured-items {
+        margin-bottom: 16px;
+    }
+
+    .featured-button-BrowseAll {
+        margin-top: 24px;
+    }
+}

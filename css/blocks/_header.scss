@@ -9,7 +9,26 @@
     cursor: pointer;
 }
 
+.header-search {
+    background-color: $black;
+    outline: none;
+    border: none;
+}
+
 .case2 img {
     margin-left: 33px;
     cursor: pointer;
+}
+
+.header-burger {
+    background-color: $black;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header-account,
+    .header-cart {
+        display: none;
+    }
 }
