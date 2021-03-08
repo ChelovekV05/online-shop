@@ -1,4 +1,8 @@
 $black: #222222;
 $pink:  #F16D7F;
 $card-widht: 360px;
-$widht-desktop: 1140px;
+$widht-screen: 1140px;
+
+@media screen and (max-width: 1180px) {
+    $widht-screen: 768px;
+}   

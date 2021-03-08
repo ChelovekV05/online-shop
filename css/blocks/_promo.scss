@@ -3,8 +3,13 @@
     @include flex;
 }
 
+.preview {
+    width: calc(#{$widht-screen} / 2);
+    display: flex;
+}
+
 .promo-text {
-    width: 570px;
+    width: calc(#{$widht-screen} / 2);
     margin-left: 63px;
 }
 
@@ -21,16 +26,37 @@
 }
 
 .pt-span-1 {
-    @include font(48px, 900);
+    @include font(48px, 900, 57.6px);
     color: $black;
 }
 
 .pt-span-2 {
-    @include font(32px, 700);
+    @include font(32px, 700, 38.4px);
     color: $black;
 }
 
 .pt-span-3 {
-    @include font(32px, 700);
+    @include font(32px, 700, 38.4px);
     color: $pink;
+}
+
+@media screen and (max-width: 1180px) {
+    .preview {
+        justify-content: center;
+        & img {
+            height: 368px;
+        }
+    }
+
+    .pt-span-1 {
+        @include font(44px, 900, 52.8px);
+    }
+    
+    .pt-span-2 {
+        @include font(24px, 700, 28.8px);
+    }
+    
+    .pt-span-3 {
+        @include font(24px, 700, 28.8px);
+    }
 }

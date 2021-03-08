@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 96px;
+    margin-bottom: 128px;
 }
 
 .cart-all-products,
@@ -191,5 +192,33 @@
     &:hover {
         cursor: pointer;
         background-color: #df5366;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .cart-main {
+        justify-content: center;
+        margin-top: 59px;
+    }
+
+    .cart-product {
+        width: 734px;
+    }
+
+    .cart-all-products-buttons {
+        margin-top: 22px;
+        justify-content: space-evenly;
+    }
+
+    .catr-shipping {
+        width: 734px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    .cart-order-confirmation {
+        margin-top: 20px;
     }
 }

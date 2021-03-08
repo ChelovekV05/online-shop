@@ -31,3 +31,10 @@
     font-weight: 700;
     color: $pink;
 }
+
+@media screen and (max-width: 1180px) {
+    .catalog-breadcrumb{
+        height: 148px;
+        margin-bottom: 24px;
+    }
+}

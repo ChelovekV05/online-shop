@@ -4,7 +4,7 @@
     background-image: url(../img/Feedback.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #E1E1E1;
+    background-size: cover;
     margin: 0 auto;
     @include flex;
 }
@@ -72,5 +72,35 @@
     &:hover {
         cursor: pointer;
         background-color: #ec5f72;
+    }
+}
+
+.product-fb {
+    margin-top: 98px;
+}
+
+@media screen and (max-width: 1180px) {
+    .feedback {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 614px;
+    }
+
+    .product-fb {
+        margin-top: 110px;
+    }
+
+    .feedback-box {
+        height: 200px;
+        width: 100%;
+    }
+
+    .subscribe-info-p {
+        margin-bottom: 0;
+    }
+
+    .subscribe-p {
+        margin-top: 0;
     }
 }

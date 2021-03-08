@@ -5,6 +5,30 @@
     margin-top: 65px;
 }
 
+.categories-for {
+    width: $card-widht;
+    height: 260px;
+}
+
+.for-women {
+    background-image: url(../img/for-women.jpg);
+}
+
+.for-men {
+    background-image: url(../img/for-men.jpg);
+}
+
+.for-kids {
+    background-image: url(../img/for-kids.jpg);
+}
+
+.accesorise {
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    background-image: url(../img/ACCESORIES.jpg);
+}
+
 .categories-link {
     text-decoration: none;
     width: 100%;
@@ -16,31 +40,6 @@
     &:hover {
         transform: scale(1.1);
     }
-}
-
-.for-women {
-    width: $card-widht;
-    height: 260px;
-    background-image: url(../img/for-women.jpg);
-}
-
-.for-men {
-    width: $card-widht;
-    height: 260px;
-    background-image: url(../img/for-men.jpg);
-}
-
-.for-kids {
-    width: $card-widht;
-    height: 260px;
-    background-image: url(../img/for-kids.jpg);
-}
-
-.accesorise {
-    width: 100%;
-    height: 180px;
-    margin-top: 30px;
-    background-image: url(../img/ACCESORIES.jpg);
 }
 
 .categories-p1 {
@@ -55,4 +54,17 @@
     text-align: center;
     color: #F16D7F;
     margin: 3px;
+}
+
+@media screen and (max-width: 1180px) {
+    .categories-for {
+        width: 232.44px;
+        height: 167.62px;
+        background-size: 100% 100%;
+    }
+
+    .accesorise {
+        height: 116px;
+        margin-top: 19px;
+    }
 }
