@@ -4,31 +4,124 @@
     @include flex();
 }
 
-.case1 img {
-    margin-right: 41px;
-    cursor: pointer;
+.case1  {
+    width: 127px;
+    @include flex;
 }
 
 .header-search {
     background-color: $black;
     outline: none;
     border: none;
-}
-
-.case2 img {
-    margin-left: 33px;
     cursor: pointer;
 }
 
-.header-burger {
+.case2 {
+    width: 187px;
+    @include flex;
+}
+
+.menu-btn {
     background-color: $black;
     outline: none;
     border: none;
+    cursor: pointer;
+}
+
+.menu-overlay {
+    position: absolute;
+    height: 764px;
+    width: 100%;
+    background-color: #0005;
+    top: 75px;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: flex-end;
+}
+
+.menu-overlay-open {
+    display: flex;
+}
+
+.site-navigation {
+    background-color: #FFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    position: relative;
+    padding: 37px 20px 20px 34px;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    &:hover {
+        cursor: pointer;
+        transform: rotate(90deg );
+    }
+    & svg {
+        fill: #6F6E6E
+    }
+}
+
+.site-navigation-h2 {
+    @include font(14px, bold, 17px);
+    margin: 0 0 24px;
+}
+
+.site-navigation-list-1 {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation-items-1,
+.site-navigation-items-2 {
+    list-style-type: none;
+}
+
+.site-navigation-items-1 {
+    margin-bottom: 20px;
+}
+
+.site-navigation-list-2 {
+    padding-left: 21px;
+}
+
+.site-navigation-items-2 {
+    margin-top: 11px;
+}
+
+.site-navigation-link-1 {
+    color: #F16D7F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.site-navigation-link-2 {
+    color: #6F6E6E;
+    @include font (14px, normal, 17px);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 1180px) {
+    .menu-overlay {
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .header-account,
     .header-cart {
         display: none;
+    }
+
+    .case2 {
+        justify-content: flex-end;
     }
 }
