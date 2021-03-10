@@ -1436,6 +1436,11 @@ body {
   .featured-button-BrowseAll {
     margin-top: 24px;
   }
+  .product-main .featured-all-items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .cart-main {
