@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
+    margin-bottom: 113px;
 }
 
 .registration-form {
@@ -25,7 +26,8 @@
     outline: none;
     transition: 0.3s;
     &::placeholder {
-        @include font(13px, 300);
+        font-size: 13px;
+        font-weight: 300;
         color: #B1B1B1;
     }
     &:focus {

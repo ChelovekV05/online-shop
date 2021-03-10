@@ -98,6 +98,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 3;
 }
 
 .menu-overlay-open {
@@ -1633,32 +1634,24 @@ body {
   color: #222222;
   font-size: 13px;
   font-weight: 300;
-  line-height: 16px;
-  font-style: normal;
 }
 
 .cart-shipping-adress-input:-ms-input-placeholder {
   color: #222222;
   font-size: 13px;
   font-weight: 300;
-  line-height: 16px;
-  font-style: normal;
 }
 
 .cart-shipping-adress-input::-ms-input-placeholder {
   color: #222222;
   font-size: 13px;
   font-weight: 300;
-  line-height: 16px;
-  font-style: normal;
 }
 
 .cart-shipping-adress-input::placeholder {
   color: #222222;
   font-size: 13px;
   font-weight: 300;
-  line-height: 16px;
-  font-style: normal;
 }
 
 .cart-shipping-adress-input:focus::-webkit-input-placeholder {
@@ -1851,6 +1844,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 64px;
+  margin-bottom: 113px;
 }
 
 .registration-form {
@@ -1887,32 +1881,24 @@ body {
 .registration-form-input::-webkit-input-placeholder {
   font-size: 13px;
   font-weight: 300;
-  line-height: normal;
-  font-style: normal;
   color: #B1B1B1;
 }
 
 .registration-form-input:-ms-input-placeholder {
   font-size: 13px;
   font-weight: 300;
-  line-height: normal;
-  font-style: normal;
   color: #B1B1B1;
 }
 
 .registration-form-input::-ms-input-placeholder {
   font-size: 13px;
   font-weight: 300;
-  line-height: normal;
-  font-style: normal;
   color: #B1B1B1;
 }
 
 .registration-form-input::placeholder {
   font-size: 13px;
   font-weight: 300;
-  line-height: normal;
-  font-style: normal;
   color: #B1B1B1;
 }
 
