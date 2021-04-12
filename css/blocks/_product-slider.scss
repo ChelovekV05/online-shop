@@ -30,3 +30,28 @@
         height: 565px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .product-slider {
+        position: relative;
+        justify-content: center;
+    }
+    
+    .product-slider img {
+        height: 454px;
+        width: 375px;
+    }
+
+    .catalog-slider-btn-b {
+        position: absolute;
+    }
+
+    
+    .slider-btn-left {
+        left: 0;
+    }
+
+    .slider-btn-right {
+        right: 0;
+    }
+}

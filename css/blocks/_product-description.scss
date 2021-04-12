@@ -1,8 +1,9 @@
 
 .product-description {
+    max-width: 1140px;
     height: 600px;
     border: 1px solid #EAEAEA;
-    margin-bottom: 115px;
+    margin: 0 auto 115px;
     position: relative;
     top: -65px;
     background-color: white;
@@ -60,40 +61,7 @@
 .product-description-text-price {
     @include font (24px, 300);
     color: #EF5B70;
-    &:hover {
-        animation: circle 15s linear infinite;
-    }
 }
-
-@keyframes circle {
-    from {
-        transform: translateX(0) translateY(0) scale(1);
-    }
-    12% {
-        transform: translateX(125px) translateY(40px) scale(1.25);
-    }
-    25% {
-        transform: translateX(200px) translateY(100px) scale(1.5);
-    }
-    37% {
-        transform: translateX(125px) translateY(160px) scale(1.75);
-    }
-    50% {
-        transform: translateX(0) translateY(200px) scale(2);
-    }
-    62% {
-        transform: translateX(-125px) translateY(160px) scale(1.75);
-    }
-    75% {
-        transform: translateX(-200px) translateY(100px) scale(1.5);
-    }
-    87% {
-        transform: translateX(-75px) translateY(40px) scale(1.25);
-    }
-    to {
-        transform: translateX(0) translateY(0) scale(1);
-        }
-    }
 
 .product-description-form--add-to-cart {
     display: flex;
@@ -110,15 +78,14 @@
     position: relative;
 }
 
-::-webkit-details-marker {
-    display: none;
-}
-
 .product-description-sort-summary {
     list-style: none;
     margin-right: 23px;
     outline: none;
     cursor: pointer;
+    &::-webkit-details-marker {
+        display: none;
+    }
     & img {
         margin-left: 9px;
     }
@@ -192,5 +159,25 @@
 @media screen and (max-width: 1180px) {
     .product-description {
         top: 0;
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product-description {
+        width: 375px;
+    }
+
+    .product-description-text-desc {
+        line-height: 20.3px;
+        width: 330px;  
+    }
+
+    .product-description-hr {
+        width: 175px;
+    }
+    
+    .product-description-sort-summary {
+        @include font (10px, 400, 12px);
     }
 }

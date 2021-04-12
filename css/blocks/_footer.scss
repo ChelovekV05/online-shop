@@ -30,3 +30,15 @@
         background-color:$pink;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 143px;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .social {
+        margin-bottom: 21px;
+    }
+}

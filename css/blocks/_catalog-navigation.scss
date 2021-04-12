@@ -40,6 +40,10 @@
     color: #000000;
     outline: none;
     transition: color 0.3s, fill 0.3s;
+    list-style: none;
+    &::-webkit-details-marker {
+        display: none;
+    }
     & svg {
         margin: 0 0 0 11px; 
     }
@@ -101,11 +105,15 @@
 }
 
 .catalog-sort-summary {
-    @include font(14px, normal, 17px,);
+    @include font(14px, normal, 17px);
     color: #6F6E6E;
     margin: 0;
     outline: none;
     transition: 0.3s;
+    list-style: none;
+    &::-webkit-details-marker {
+        display: none;
+    }
     &:hover {
         cursor: pointer;
         color: #222121;
@@ -177,5 +185,90 @@
     .catalog-sort-options-3 {
         width: 90px;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-filter {
+        width: 37.5px;
+    }
+
+    .catalog-filter__summary {
+        width: 37.5px;
+        & > span {
+            display: none;
+        }
+        & > svg {
+            width: 37.5px;
+            height: 25px;
+            margin: 0;
+        }
+    }
+
+    .catalog-filter__details[open] {
+        top: -8px;
+        left: -8px;
+        & .catalog-filter__summary{
+            padding: 8px;
+            width: 100%;
+        }
+    }
+
+    .catalog-filter-open__summary {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
+    .catalog-sort {
+        width: 260px;
+        justify-content: space-between;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .catalog-sort-details {
+        margin-right: 0;
+    }
+
+    .catalog-sort-summary {
+        @include font(12px, normal, 14px);
+    }
+
+    .catalog-sort-summary > img {
+        margin-left: 9px;
+    }
+
+    .catalog-filter-open {
+        padding-left: 9px;
+    }
+
+    .catalog-sort-options-1,
+    .catalog-sort-options-2,
+    .catalog-sort-options-3 {
+        & div {
+            margin: 4px;
+        }
+        & input {
+            margin: 0 7px 0 4px;
+        }
+        & label {
+            font-size: 12px;
+        }
+    }
+
+    .catalog-sort-options-1 {
+        width: 130px;
+        right: calc(75px + 60px + 2px);
+    }
+
+    .catalog-sort-options-2 {
+        width: 60px;
+        right: 71px;
+    }
+
+    .catalog-sort-options-3 {
+        width: 75px;
+        right: -9px;
     }
 }

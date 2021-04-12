@@ -60,3 +60,40 @@
         @include font(24px, 700, 28.8px);
     }
 }
+
+@media screen and (max-width: 767px) {
+    .preview {
+        display: none;
+    }
+
+    .promo {
+        height: 363px;
+        justify-content: center;
+    }
+
+    .promo-text {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .promo-text-h1 {
+        line-height: 0;
+    }
+
+    .pt-span-1 {
+        @include font(38px, 900, 40px);   
+    }
+    
+    .pt-span-2 {
+        @include font(20px, 700, 24px);
+    }
+    
+    .pt-span-3 {
+        @include font(20px, 700, 24px);
+    }
+
+    .promo-text-line {
+        height: 61px;
+    }
+}
